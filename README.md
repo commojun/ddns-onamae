@@ -1,6 +1,7 @@
 # ddns-onamae
 お名前.comのDDNSレコード更新君
 
+コンテナ内でcrontabを動かして定期的に更新する
 
 ## 準備
 
@@ -15,7 +16,7 @@ domain: 更新したいドメインを記載 ex) commojun.com
 ## Docker build
 
 ```
-$ docker build ddns-onamae:latest .
+$ docker build -t ddns-onamae:latest .
 ```
 
 ## docker-compose
