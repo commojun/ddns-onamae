@@ -9,6 +9,9 @@ PASS=$(cat pass)
 gip=$(curl inet-ip.info)
 domip=$(dig $HOST.$DOMAIN +short)
 
+echo "今のGIP: $gip"
+echo "ドメインのIP: $domip"
+
 # IPアドレス更新
 if [ "$gip" != "$domip" ]; then
     {
