@@ -2,6 +2,7 @@ version: "3"
 services:
   ddns:
     image: ddns-onamae:latest
+    build: .
     restart: always
     logging:
       options:
